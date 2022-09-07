@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .quadrado{
+           width: 250px;
+           height: 250px;
+           background-color: #f98b2a;
+           margin:0 auto;
+           text-align: center;
+           animation: square 3s infinite  alternate;
+           
+           
+       }
+       
+       @keyframes square {
+           0%   {
+               clip-path: polygon(100% 0, 100% 0%, 100% 0%, 100% 0%, 100% 0%, 50% 50%);
+               background-color: #36ff9a;
+           }
+           25%  {
+               clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%);
+               background-color: #fccf40;
+           }
+           50%{
+               clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 100%, 0 100%, 50% 50%);
+               background-color: #f40696;
+           }
+           75%  {
+               clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%, 0 0, 50% 50%);
+               background-color: #55aadd;
+           }
+           100% {
+               clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 100% 0, 50% 50%);
+               background-color: #36ff9a;
+           }
+       }
+       </style>
+</head>
+<body>
+    <h1 class="quadrado"><br> <br> Triangulo <br> Retangulo  <br> Funec </h1>
+    
+</body>
+</html>

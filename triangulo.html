@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Funec </title>
+    <style>
+        .triangulo{
+           width: 200px;
+           height: 200px;
+           background-color: #c1f347;
+           margin:0 auto;
+           animation: triangle 3s infinite  alternate;
+       }
+       
+       @keyframes triangle {
+           from {
+               clip-path: polygon(50% 0%, 0% 100%, 0 100%);
+           }
+           to {
+               clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+           }
+       }
+       </style>
+</head>
+<body>
+    <h3 class="triangulo"> triangulo</h3>
+    <p>triangulo </p>
+</body>
+</html>
